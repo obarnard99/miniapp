@@ -13,4 +13,4 @@ if __name__ == '__main__':
   args = parser.parse_args()
   port = args.p
   app.config['port'] = port
-  app.run(port=port)
+  app.run(host='0.0.0.0',port=port)

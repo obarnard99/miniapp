@@ -11,7 +11,7 @@ if __name__ == '__main__':
   parser = ArgumentParser(add_help=False)
   parser.add_argument('-p', default=5000, type=int)
   parser.add_argument('-h', default='0.0.0.0', type=str)
-  parser.add_argument('-s', default=False, type=bool)
+  parser.add_argument('-s', action='store_true')
   args = parser.parse_args()
   port = args.p
   host = args.h

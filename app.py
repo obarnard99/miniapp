@@ -16,4 +16,4 @@ if __name__ == '__main__':
   host = args.h
   app.config['port'] = port
   app.config['host'] = host
-  app.run(host=host,port=port, ssl_context='adhoc')
+  app.run(host=host,port=port)
